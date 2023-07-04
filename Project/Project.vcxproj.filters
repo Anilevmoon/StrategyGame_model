@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Enums">
+      <UniqueIdentifier>{dfa22bce-b52a-4450-883c-8d7c36d8c031}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\autoTest">
+      <UniqueIdentifier>{6434a1b1-13e6-4d09-a863-baea2567edb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UnitAssisted">
+      <UniqueIdentifier>{15942641-602f-4141-8939-cb2da7817f22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\autoTeSt">
+      <UniqueIdentifier>{3105893c-98c0-4a28-b119-39c17c955d78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UnitAssined">
+      <UniqueIdentifier>{e10e285c-672b-47d5-83e4-a0c60fb4dbf8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\WorldWide">
+      <UniqueIdentifier>{479c9423-020b-4c51-93fe-6407a58d875d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Prototypes">
+      <UniqueIdentifier>{1eec0902-ecf5-4989-ae42-2167715bf4fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\WorldWide">
+      <UniqueIdentifier>{9ab59f5a-285c-4a9c-9e26-0bb34123290d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Prototypes">
+      <UniqueIdentifier>{2a1e5851-a55d-4754-be67-f2e1c4acc98d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\WorldWide\Mapp">
+      <UniqueIdentifier>{63a06b12-e1e6-4b23-b078-69c1549dbaf0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="TXTest.cpp">
+      <Filter>Source Files\autoTeSt</Filter>
+    </ClCompile>
+    <ClCompile Include="TDebug.cpp">
+      <Filter>Source Files\autoTeSt</Filter>
+    </ClCompile>
+    <ClCompile Include="IEntity.cpp">
+      <Filter>Source Files\UnitAssined</Filter>
+    </ClCompile>
+    <ClCompile Include="TMilitary.cpp">
+      <Filter>Source Files\UnitAssined</Filter>
+    </ClCompile>
+    <ClCompile Include="TNeitral.cpp">
+      <Filter>Source Files\UnitAssined</Filter>
+    </ClCompile>
+    <ClCompile Include="TBuildings.cpp">
+      <Filter>Source Files\UnitAssined</Filter>
+    </ClCompile>
+    <ClCompile Include="TUnit.cpp">
+      <Filter>Source Files\UnitAssined</Filter>
+    </ClCompile>
+    <ClCompile Include="TMagic.cpp">
+      <Filter>Source Files\UnitAssined</Filter>
+    </ClCompile>
+    <ClCompile Include="TWorld.cpp">
+      <Filter>Source Files\WorldWide</Filter>
+    </ClCompile>
+    <ClCompile Include="TPlayer.cpp">
+      <Filter>Source Files\WorldWide</Filter>
+    </ClCompile>
+    <ClCompile Include="TObject.cpp">
+      <Filter>Source Files\WorldWide</Filter>
+    </ClCompile>
+    <ClCompile Include="TMap.cpp">
+      <Filter>Source Files\WorldWide</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TModel.cpp">
+      <Filter>Source Files\Prototypes</Filter>
+    </ClCompile>
+    <ClCompile Include="TMilitaryPrototype.cpp">
+      <Filter>Source Files\Prototypes</Filter>
+    </ClCompile>
+    <ClCompile Include="TTestBuff.cpp">
+      <Filter>Source Files\autoTeSt</Filter>
+    </ClCompile>
+    <ClCompile Include="TStartEntityCreator.cpp">
+      <Filter>Source Files\WorldWide</Filter>
+    </ClCompile>
+    <ClCompile Include="TTestMap.cpp">
+      <Filter>Source Files\autoTeSt</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NNMajicType.h">
+      <Filter>Header Files\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="NOwner.h">
+      <Filter>Header Files\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="NTUnitTypes.h">
+      <Filter>Header Files\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="TXTest.h">
+      <Filter>Header Files\autoTest</Filter>
+    </ClInclude>
+    <ClInclude Include="TDebug.h">
+      <Filter>Header Files\autoTest</Filter>
+    </ClInclude>
+    <ClInclude Include="IEntity.h">
+      <Filter>Header Files\UnitAssisted</Filter>
+    </ClInclude>
+    <ClInclude Include="TBuildings.h">
+      <Filter>Header Files\UnitAssisted</Filter>
+    </ClInclude>
+    <ClInclude Include="TMilitary.h">
+      <Filter>Header Files\UnitAssisted</Filter>
+    </ClInclude>
+    <ClInclude Include="TNeitral.h">
+      <Filter>Header Files\UnitAssisted</Filter>
+    </ClInclude>
+    <ClInclude Include="TObject.h">
+      <Filter>Header Files\UnitAssisted</Filter>
+    </ClInclude>
+    <ClInclude Include="TUnit.h">
+      <Filter>Header Files\UnitAssisted</Filter>
+    </ClInclude>
+    <ClInclude Include="TPlayer.h">
+      <Filter>Header Files\WorldWide</Filter>
+    </ClInclude>
+    <ClInclude Include="TWorld.h">
+      <Filter>Header Files\WorldWide</Filter>
+    </ClInclude>
+    <ClInclude Include="TStartEntityCreator.h">
+      <Filter>Header Files\WorldWide</Filter>
+    </ClInclude>
+    <ClInclude Include="TMagic.h">
+      <Filter>Header Files\UnitAssisted</Filter>
+    </ClInclude>
+    <ClInclude Include="TMilitaryPrototype.h">
+      <Filter>Header Files\Prototypes</Filter>
+    </ClInclude>
+    <ClInclude Include="TModel.h">
+      <Filter>Header Files\Prototypes</Filter>
+    </ClInclude>
+    <ClInclude Include="TMap.h">
+      <Filter>Header Files\WorldWide\Mapp</Filter>
+    </ClInclude>
+    <ClInclude Include="SMapPoint.h">
+      <Filter>Header Files\WorldWide\Mapp</Filter>
+    </ClInclude>
+    <ClInclude Include="SMapElement.h">
+      <Filter>Header Files\WorldWide\Mapp</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
