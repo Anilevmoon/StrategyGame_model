@@ -1,2 +1,2 @@
 # StrategyGame_model
-mine update
+mine update new 
