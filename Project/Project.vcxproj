@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{1420921e-4fb9-4bdf-9181-7f96cb9975b7}</ProjectGuid>
+    <RootNamespace>Project</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(ProjectDir)../;$(ProjectDir)/;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+    <OutDir>$(MSBuildProjectDirectory)\Output_$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>Build_$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(ProjectDir)../;$(ProjectDir)/;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+    <OutDir>$(MSBuildProjectDirectory)\Output_$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>Build_$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PreprocessorDefinitions>_ITERATOR_DEBUG_LEVEL=0;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;_SILENCE_CXX17_RESULT_OF_DEPRECATION_WARNING;_SILENCE_CXX17_CODECVT_HEADER_DEPRECATION_WARNING;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PreprocessorDefinitions>NDEBUG;_CRT_SECURE_NO_WARNINGS;_SILENCE_CXX17_RESULT_OF_DEPRECATION_WARNING;_SILENCE_CXX17_CODECVT_HEADER_DEPRECATION_WARNING;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\CRX\Base\IPropertyFlag.h" />
+    <ClInclude Include="..\CRX\Base\T3DBoolPoint.h" />
+    <ClInclude Include="..\CRX\Base\T3DIPoint.h" />
+    <ClInclude Include="..\CRX\Base\T3DPoint.h" />
+    <ClInclude Include="..\CRX\Base\TBaseNumberPointClass.h" />
+    <ClInclude Include="..\CRX\Base\TBasePointClass.h" />
+    <ClInclude Include="..\CRX\Base\TBitsetPropertyFlag.h" />
+    <ClInclude Include="..\CRX\Base\TBitsetPropertyFlagStringConverter.h" />
+    <ClInclude Include="..\CRX\Base\TDateInterval.h" />
+    <ClInclude Include="..\CRX\Base\TDateTime.h" />
+    <ClInclude Include="..\CRX\Base\TDebug.h" />
+    <ClInclude Include="..\CRX\Base\TDirectoryData.h" />
+    <ClInclude Include="..\CRX\Base\TDPoint.h" />
+    <ClInclude Include="..\CRX\Base\TDT.h" />
+    <ClInclude Include="..\CRX\Base\TEnumTemplate.h" />
+    <ClInclude Include="..\CRX\Base\TFile.h" />
+    <ClInclude Include="..\CRX\Base\TFixPoint.h" />
+    <ClInclude Include="..\CRX\Base\THandlersPool.h" />
+    <ClInclude Include="..\CRX\Base\THTTPRequest.h" />
+    <ClInclude Include="..\CRX\Base\TLowerCasedString.h" />
+    <ClInclude Include="..\CRX\Base\TMiscUtils.h" />
+    <ClInclude Include="..\CRX\Base\TParseFormat.h" />
+    <ClInclude Include="..\CRX\Base\TPoint.h" />
+    <ClInclude Include="..\CRX\Base\TRect.h" />
+    <ClInclude Include="..\CRX\Base\TSingleton.h" />
+    <ClInclude Include="..\CRX\Base\TSize.h" />
+    <ClInclude Include="..\CRX\Base\TStaticRandom.h" />
+    <ClInclude Include="..\CRX\Base\TStringUtils.h" />
+    <ClInclude Include="..\CRX\Base\TTCPClientSocket.h" />
+    <ClInclude Include="..\CRX\Base\TVFSRoot.h" />
+    <ClInclude Include="..\CRX\Base\TXTest.h" />
+    <ClInclude Include="..\CRX\Reflection\IReflectionFunctionCallOperator.h" />
+    <ClInclude Include="..\CRX\Reflection\IReflectionIndirectCallOperator.h" />
+    <ClInclude Include="..\CRX\Reflection\IReflectionProperyOperator.h" />
+    <ClInclude Include="..\CRX\Reflection\IReflectionSerializable.h" />
+    <ClInclude Include="..\CRX\Reflection\IVirtualConstructor.h" />
+    <ClInclude Include="..\CRX\Reflection\magic_enum.h" />
+    <ClInclude Include="..\CRX\Reflection\MakeShared.h" />
+    <ClInclude Include="..\CRX\Reflection\NNSerializerFlags.h" />
+    <ClInclude Include="..\CRX\Reflection\TReflectionClassFunctionData.h" />
+    <ClInclude Include="..\CRX\Reflection\TReflectionClassPropertyData.h" />
+    <ClInclude Include="..\CRX\Reflection\TReflectionCommonTypeIdent.h" />
+    <ClInclude Include="..\CRX\Reflection\TReflectionContainerManipulator.h" />
+    <ClInclude Include="..\CRX\Reflection\TReflectionFunctionOperatorTemplate.h" />
+    <ClInclude Include="..\CRX\Reflection\TReflectionGlobals.h" />
+    <ClInclude Include="..\CRX\Reflection\TReflectionImplDefs.h" />
+    <ClInclude Include="..\CRX\Reflection\TReflectionImplTempalates.h" />
+    <ClInclude Include="..\CRX\Reflection\TReflectionMapContainerManipulator.h" />
+    <ClInclude Include="..\CRX\Reflection\TReflectionObject.h" />
+    <ClInclude Include="..\CRX\Reflection\TReflectionObjectCasts.h" />
+    <ClInclude Include="..\CRX\Reflection\TReflectionObjectCastsTemplate.h" />
+    <ClInclude Include="..\CRX\Reflection\TReflectionProperyOperatorTemplate.h" />
+    <ClInclude Include="..\CRX\Reflection\TReflectionStringConverter.h" />
+    <ClInclude Include="..\CRX\Reflection\TReflectionStringConverterTemplate.h" />
+    <ClInclude Include="..\CRX\Reflection\TReflectionStringEnumConverter.h" />
+    <ClInclude Include="..\CRX\Reflection\TReflectionTwoStepXMLDeserializer.h" />
+    <ClInclude Include="..\CRX\Reflection\TReflectionTwoStepXMLSerializer.h" />
+    <ClInclude Include="..\CRX\Reflection\TReflectionTypeFactory.h" />
+    <ClInclude Include="..\CRX\Reflection\TReflectionTypeFactoryBaseTemplate.h" />
+    <ClInclude Include="..\CRX\Reflection\TReflectionTypeFactoryTemplate.h" />
+    <ClInclude Include="..\CRX\Reflection\TReflectionVectorContainerManipulator.h" />
+    <ClInclude Include="..\CRX\XParse\TMapContainerWrapper.h" />
+    <ClInclude Include="..\CRX\XParse\TXMLoader.h" />
+    <ClInclude Include="..\CRX\XParse\TXMNode.h" />
+    <ClInclude Include="Algorithm\SBox2D.h" />
+    <ClInclude Include="Algorithm\TAlgorithms.h" />
+    <ClInclude Include="Algorithm\TLightStaticRandom.h" />
+    <ClInclude Include="Algorithm\TPathFinder.h" />
+    <ClInclude Include="EntityPart\IEntity.h" />
+    <ClInclude Include="EntityPart\TBuildings.h" />
+    <ClInclude Include="EntityPart\TForestChimeras.h" />
+    <ClInclude Include="EntityPart\TMilitary.h" />
+    <ClInclude Include="EntityPart\TModel.h" />
+    <ClInclude Include="EntityPart\TNeitral.h" />
+    <ClInclude Include="EntityPart\TUnit.h" />
+    <ClInclude Include="Enums\NEntityType.h" />
+    <ClInclude Include="Enums\NMagicType.h" />
+    <ClInclude Include="Enums\NOwner.h" />
+    <ClInclude Include="MapParts\SMapElement.h" />
+    <ClInclude Include="MapParts\SMapPoint.h" />
+    <ClInclude Include="MapParts\TMap.h" />
+    <ClInclude Include="Prototypes\TBuffPrototype.h" />
+    <ClInclude Include="Prototypes\TBuildingsPrototype.h" />
+    <ClInclude Include="Prototypes\TMapPrototype.h" />
+    <ClInclude Include="Prototypes\TPlayerPrototype.h" />
+    <ClInclude Include="Prototypes\TUnitPrototype.h" />
+    <ClInclude Include="Prototypes\TWorldPrototype.h" />
+    <ClInclude Include="WorldComponents\TBuff.h" />
+    <ClInclude Include="WorldComponents\TObject.h" />
+    <ClInclude Include="WorldComponents\TPlayer.h" />
+    <ClInclude Include="WorldComponents\TStartEntityCreator.h" />
+    <ClInclude Include="WorldComponents\TWorld.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\CRX\Base\Base64.cpp" />
+    <ClCompile Include="..\CRX\Base\T3DBoolPoint.cpp" />
+    <ClCompile Include="..\CRX\Base\T3DIPoint.cpp" />
+    <ClCompile Include="..\CRX\Base\T3DPoint.cpp" />
+    <ClCompile Include="..\CRX\Base\TDateInterval.cpp" />
+    <ClCompile Include="..\CRX\Base\TDateTime.cpp" />
+    <ClCompile Include="..\CRX\Base\TDebug.cpp" />
+    <ClCompile Include="..\CRX\Base\TDirectoryData.cpp" />
+    <ClCompile Include="..\CRX\Base\TDPoint.cpp" />
+    <ClCompile Include="..\CRX\Base\TDT.cpp" />
+    <ClCompile Include="..\CRX\Base\TFile.cpp" />
+    <ClCompile Include="..\CRX\Base\TFixPoint.cpp" />
+    <ClCompile Include="..\CRX\Base\THTTPRequest.cpp" />
+    <ClCompile Include="..\CRX\Base\TLowerCasedString.cpp" />
+    <ClCompile Include="..\CRX\Base\TMiscUtils.cpp" />
+    <ClCompile Include="..\CRX\Base\TParseFormat.cpp" />
+    <ClCompile Include="..\CRX\Base\TPoint.cpp" />
+    <ClCompile Include="..\CRX\Base\TRect.cpp" />
+    <ClCompile Include="..\CRX\Base\TSize.cpp" />
+    <ClCompile Include="..\CRX\Base\TStaticRandom.cpp" />
+    <ClCompile Include="..\CRX\Base\TStringUtils.cpp" />
+    <ClCompile Include="..\CRX\Base\TTCPClientSocket.cpp" />
+    <ClCompile Include="..\CRX\Base\TVFSRoot.cpp" />
+    <ClCompile Include="..\CRX\Base\TXTest.cpp" />
+    <ClCompile Include="..\CRX\Reflection\IReflectionSerializable.cpp" />
+    <ClCompile Include="..\CRX\Reflection\TReflectionClassFunctionData.cpp" />
+    <ClCompile Include="..\CRX\Reflection\TReflectionClassPropertyData.cpp" />
+    <ClCompile Include="..\CRX\Reflection\TReflectionCommonTypeIdent.cpp" />
+    <ClCompile Include="..\CRX\Reflection\TReflectionContainerManipulator.cpp" />
+    <ClCompile Include="..\CRX\Reflection\TReflectionGlobals.cpp" />
+    <ClCompile Include="..\CRX\Reflection\TReflectionObject.cpp" />
+    <ClCompile Include="..\CRX\Reflection\TReflectionObjectCasts.cpp" />
+    <ClCompile Include="..\CRX\Reflection\TReflectionStringConverter.cpp" />
+    <ClCompile Include="..\CRX\Reflection\TReflectionTwoStepXMLDeserializer.cpp" />
+    <ClCompile Include="..\CRX\Reflection\TReflectionTwoStepXMLSerializer.cpp" />
+    <ClCompile Include="..\CRX\Reflection\TReflectionTypeFactory.cpp" />
+    <ClCompile Include="..\CRX\XParse\TMapContainerWrapper.cpp" />
+    <ClCompile Include="..\CRX\XParse\TXMLoader.cpp" />
+    <ClCompile Include="..\CRX\XParse\TXMNode.cpp" />
+    <ClCompile Include="Algorithm\TAlgorithms.cpp" />
+    <ClCompile Include="Algorithm\TLightStaticRandom.cpp" />
+    <ClCompile Include="Algorithm\TPathFinder.cpp" />
+    <ClCompile Include="Autotests\TTestBuff.cpp" />
+    <ClCompile Include="Autotests\TTestBuilding.cpp" />
+    <ClCompile Include="Autotests\TTestForestChimeras.cpp" />
+    <ClCompile Include="Autotests\TTestMap.cpp" />
+    <ClCompile Include="Autotests\TTestMovement.cpp" />
+    <ClCompile Include="Autotests\TTestOwner.cpp" />
+    <ClCompile Include="EntityPart\IEntity.cpp" />
+    <ClCompile Include="EntityPart\TBuildings.cpp" />
+    <ClCompile Include="EntityPart\TForestChimeras.cpp" />
+    <ClCompile Include="EntityPart\TMilitary.cpp" />
+    <ClCompile Include="EntityPart\TModel.cpp" />
+    <ClCompile Include="EntityPart\TNeitral.cpp" />
+    <ClCompile Include="EntityPart\TUnit.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MapParts\SMapElement.cpp" />
+    <ClCompile Include="MapParts\SMapPoint.cpp" />
+    <ClCompile Include="MapParts\TMap.cpp" />
+    <ClCompile Include="Prototypes\TBuffPrototype.cpp" />
+    <ClCompile Include="Prototypes\TBuildingsPrototype.cpp" />
+    <ClCompile Include="Prototypes\TMapPrototype.cpp" />
+    <ClCompile Include="Prototypes\TPlayerPrototype.cpp" />
+    <ClCompile Include="Prototypes\TUnitPrototype.cpp" />
+    <ClCompile Include="Prototypes\TWorldPrototype.cpp" />
+    <ClCompile Include="WorldComponents\TBuff.cpp" />
+    <ClCompile Include="WorldComponents\TObject.cpp" />
+    <ClCompile Include="WorldComponents\TPlayer.cpp" />
+    <ClCompile Include="WorldComponents\TStartEntityCreator.cpp" />
+    <ClCompile Include="WorldComponents\TWorld.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

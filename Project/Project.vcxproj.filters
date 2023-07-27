@@ -1,0 +1,540 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\CRX">
+      <UniqueIdentifier>{c8a04d35-6e82-47dc-95ae-f4bd97300858}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CRX\Reflection">
+      <UniqueIdentifier>{99207892-95e0-4b01-9d2f-fd84b8b18383}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CRX\Base">
+      <UniqueIdentifier>{4f3af605-ad95-4d9a-b7ee-b63175e5d6a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CRX\XParse">
+      <UniqueIdentifier>{c36499eb-d71a-4b59-8c26-80d62f3962fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Enums">
+      <UniqueIdentifier>{cc12a0fe-1316-4edd-8beb-23977945ecad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MapParts">
+      <UniqueIdentifier>{cafa2c28-3147-4ac2-8f97-62ff81e9ee0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Prototypes">
+      <UniqueIdentifier>{8b3957ba-15f6-4ee8-94a0-a79c8002a05b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Autotests">
+      <UniqueIdentifier>{41b980ca-75e3-409a-9098-1448e3c9b8d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\EntityPart">
+      <UniqueIdentifier>{b6b994bc-924e-48de-a6de-18641d1675fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\WorldComponents">
+      <UniqueIdentifier>{31aefe24-c269-4f55-8913-00ef0a9009c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Algorithm">
+      <UniqueIdentifier>{5761e0a4-7abd-4b15-a43b-a460c68f18c7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\CRX\Reflection\IReflectionFunctionCallOperator.h">
+      <Filter>Source Files\CRX\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Reflection\IReflectionIndirectCallOperator.h">
+      <Filter>Source Files\CRX\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Reflection\IReflectionProperyOperator.h">
+      <Filter>Source Files\CRX\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Reflection\IReflectionSerializable.h">
+      <Filter>Source Files\CRX\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Reflection\IVirtualConstructor.h">
+      <Filter>Source Files\CRX\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Reflection\magic_enum.h">
+      <Filter>Source Files\CRX\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Reflection\MakeShared.h">
+      <Filter>Source Files\CRX\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Reflection\NNSerializerFlags.h">
+      <Filter>Source Files\CRX\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Reflection\TReflectionClassFunctionData.h">
+      <Filter>Source Files\CRX\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Reflection\TReflectionClassPropertyData.h">
+      <Filter>Source Files\CRX\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Reflection\TReflectionCommonTypeIdent.h">
+      <Filter>Source Files\CRX\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Reflection\TReflectionContainerManipulator.h">
+      <Filter>Source Files\CRX\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Reflection\TReflectionFunctionOperatorTemplate.h">
+      <Filter>Source Files\CRX\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Reflection\TReflectionGlobals.h">
+      <Filter>Source Files\CRX\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Reflection\TReflectionImplDefs.h">
+      <Filter>Source Files\CRX\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Reflection\TReflectionImplTempalates.h">
+      <Filter>Source Files\CRX\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Reflection\TReflectionMapContainerManipulator.h">
+      <Filter>Source Files\CRX\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Reflection\TReflectionObject.h">
+      <Filter>Source Files\CRX\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Reflection\TReflectionObjectCasts.h">
+      <Filter>Source Files\CRX\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Reflection\TReflectionObjectCastsTemplate.h">
+      <Filter>Source Files\CRX\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Reflection\TReflectionProperyOperatorTemplate.h">
+      <Filter>Source Files\CRX\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Reflection\TReflectionStringConverter.h">
+      <Filter>Source Files\CRX\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Reflection\TReflectionStringConverterTemplate.h">
+      <Filter>Source Files\CRX\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Reflection\TReflectionStringEnumConverter.h">
+      <Filter>Source Files\CRX\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Reflection\TReflectionTwoStepXMLDeserializer.h">
+      <Filter>Source Files\CRX\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Reflection\TReflectionTwoStepXMLSerializer.h">
+      <Filter>Source Files\CRX\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Reflection\TReflectionTypeFactory.h">
+      <Filter>Source Files\CRX\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Reflection\TReflectionTypeFactoryBaseTemplate.h">
+      <Filter>Source Files\CRX\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Reflection\TReflectionTypeFactoryTemplate.h">
+      <Filter>Source Files\CRX\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Reflection\TReflectionVectorContainerManipulator.h">
+      <Filter>Source Files\CRX\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\XParse\TMapContainerWrapper.h">
+      <Filter>Source Files\CRX\XParse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\XParse\TXMLoader.h">
+      <Filter>Source Files\CRX\XParse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\XParse\TXMNode.h">
+      <Filter>Source Files\CRX\XParse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Base\IPropertyFlag.h">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Base\T3DBoolPoint.h">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Base\T3DIPoint.h">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Base\T3DPoint.h">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Base\TBaseNumberPointClass.h">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Base\TBasePointClass.h">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Base\TBitsetPropertyFlag.h">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Base\TBitsetPropertyFlagStringConverter.h">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Base\TDateInterval.h">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Base\TDateTime.h">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Base\TDebug.h">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Base\TDirectoryData.h">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Base\TDPoint.h">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Base\TDT.h">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Base\TEnumTemplate.h">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Base\TFile.h">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Base\TFixPoint.h">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Base\THandlersPool.h">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Base\THTTPRequest.h">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Base\TLowerCasedString.h">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Base\TMiscUtils.h">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Base\TParseFormat.h">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Base\TPoint.h">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Base\TRect.h">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Base\TSingleton.h">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Base\TSize.h">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Base\TStaticRandom.h">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Base\TStringUtils.h">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Base\TTCPClientSocket.h">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Base\TVFSRoot.h">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRX\Base\TXTest.h">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityPart\IEntity.h">
+      <Filter>Source Files\EntityPart</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityPart\TBuildings.h">
+      <Filter>Source Files\EntityPart</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityPart\TForestChimeras.h">
+      <Filter>Source Files\EntityPart</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityPart\TMilitary.h">
+      <Filter>Source Files\EntityPart</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityPart\TModel.h">
+      <Filter>Source Files\EntityPart</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityPart\TNeitral.h">
+      <Filter>Source Files\EntityPart</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityPart\TUnit.h">
+      <Filter>Source Files\EntityPart</Filter>
+    </ClInclude>
+    <ClInclude Include="Enums\NMagicType.h">
+      <Filter>Source Files\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Enums\NOwner.h">
+      <Filter>Source Files\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Enums\NEntityType.h">
+      <Filter>Source Files\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="MapParts\SMapPoint.h">
+      <Filter>Source Files\MapParts</Filter>
+    </ClInclude>
+    <ClInclude Include="MapParts\TMap.h">
+      <Filter>Source Files\MapParts</Filter>
+    </ClInclude>
+    <ClInclude Include="MapParts\SMapElement.h">
+      <Filter>Source Files\MapParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Prototypes\TUnitPrototype.h">
+      <Filter>Source Files\Prototypes</Filter>
+    </ClInclude>
+    <ClInclude Include="Prototypes\TBuildingsPrototype.h">
+      <Filter>Source Files\Prototypes</Filter>
+    </ClInclude>
+    <ClInclude Include="Prototypes\TBuffPrototype.h">
+      <Filter>Source Files\Prototypes</Filter>
+    </ClInclude>
+    <ClInclude Include="Prototypes\TPlayerPrototype.h">
+      <Filter>Source Files\Prototypes</Filter>
+    </ClInclude>
+    <ClInclude Include="Prototypes\TMapPrototype.h">
+      <Filter>Source Files\Prototypes</Filter>
+    </ClInclude>
+    <ClInclude Include="Prototypes\TWorldPrototype.h">
+      <Filter>Source Files\Prototypes</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldComponents\TBuff.h">
+      <Filter>Source Files\WorldComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldComponents\TObject.h">
+      <Filter>Source Files\WorldComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldComponents\TPlayer.h">
+      <Filter>Source Files\WorldComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldComponents\TStartEntityCreator.h">
+      <Filter>Source Files\WorldComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldComponents\TWorld.h">
+      <Filter>Source Files\WorldComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithm\TAlgorithms.h">
+      <Filter>Source Files\Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithm\TLightStaticRandom.h">
+      <Filter>Source Files\Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithm\TPathFinder.h">
+      <Filter>Source Files\Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithm\SBox2D.h">
+      <Filter>Source Files\Algorithm</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\CRX\Reflection\IReflectionSerializable.cpp">
+      <Filter>Source Files\CRX\Reflection</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CRX\Reflection\TReflectionClassFunctionData.cpp">
+      <Filter>Source Files\CRX\Reflection</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CRX\Reflection\TReflectionClassPropertyData.cpp">
+      <Filter>Source Files\CRX\Reflection</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CRX\Reflection\TReflectionCommonTypeIdent.cpp">
+      <Filter>Source Files\CRX\Reflection</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CRX\Reflection\TReflectionContainerManipulator.cpp">
+      <Filter>Source Files\CRX\Reflection</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CRX\Reflection\TReflectionGlobals.cpp">
+      <Filter>Source Files\CRX\Reflection</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CRX\Reflection\TReflectionObject.cpp">
+      <Filter>Source Files\CRX\Reflection</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CRX\Reflection\TReflectionObjectCasts.cpp">
+      <Filter>Source Files\CRX\Reflection</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CRX\Reflection\TReflectionStringConverter.cpp">
+      <Filter>Source Files\CRX\Reflection</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CRX\Reflection\TReflectionTwoStepXMLDeserializer.cpp">
+      <Filter>Source Files\CRX\Reflection</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CRX\Reflection\TReflectionTwoStepXMLSerializer.cpp">
+      <Filter>Source Files\CRX\Reflection</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CRX\Reflection\TReflectionTypeFactory.cpp">
+      <Filter>Source Files\CRX\Reflection</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CRX\XParse\TMapContainerWrapper.cpp">
+      <Filter>Source Files\CRX\XParse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CRX\XParse\TXMLoader.cpp">
+      <Filter>Source Files\CRX\XParse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CRX\XParse\TXMNode.cpp">
+      <Filter>Source Files\CRX\XParse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CRX\Base\Base64.cpp">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CRX\Base\T3DBoolPoint.cpp">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CRX\Base\T3DIPoint.cpp">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CRX\Base\T3DPoint.cpp">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CRX\Base\TDateInterval.cpp">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CRX\Base\TDateTime.cpp">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CRX\Base\TDebug.cpp">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CRX\Base\TDirectoryData.cpp">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CRX\Base\TDPoint.cpp">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CRX\Base\TDT.cpp">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CRX\Base\TFile.cpp">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CRX\Base\TFixPoint.cpp">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CRX\Base\THTTPRequest.cpp">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CRX\Base\TLowerCasedString.cpp">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CRX\Base\TMiscUtils.cpp">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CRX\Base\TParseFormat.cpp">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CRX\Base\TPoint.cpp">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CRX\Base\TRect.cpp">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CRX\Base\TSize.cpp">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CRX\Base\TStaticRandom.cpp">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CRX\Base\TStringUtils.cpp">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CRX\Base\TTCPClientSocket.cpp">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CRX\Base\TVFSRoot.cpp">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CRX\Base\TXTest.cpp">
+      <Filter>Source Files\CRX\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityPart\IEntity.cpp">
+      <Filter>Source Files\EntityPart</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityPart\TBuildings.cpp">
+      <Filter>Source Files\EntityPart</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityPart\TForestChimeras.cpp">
+      <Filter>Source Files\EntityPart</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityPart\TMilitary.cpp">
+      <Filter>Source Files\EntityPart</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityPart\TModel.cpp">
+      <Filter>Source Files\EntityPart</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityPart\TNeitral.cpp">
+      <Filter>Source Files\EntityPart</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityPart\TUnit.cpp">
+      <Filter>Source Files\EntityPart</Filter>
+    </ClCompile>
+    <ClCompile Include="MapParts\TMap.cpp">
+      <Filter>Source Files\MapParts</Filter>
+    </ClCompile>
+    <ClCompile Include="MapParts\SMapElement.cpp">
+      <Filter>Source Files\MapParts</Filter>
+    </ClCompile>
+    <ClCompile Include="MapParts\SMapPoint.cpp">
+      <Filter>Source Files\MapParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Prototypes\TBuildingsPrototype.cpp">
+      <Filter>Source Files\Prototypes</Filter>
+    </ClCompile>
+    <ClCompile Include="Prototypes\TUnitPrototype.cpp">
+      <Filter>Source Files\Prototypes</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Autotests\TTestBuff.cpp">
+      <Filter>Source Files\Autotests</Filter>
+    </ClCompile>
+    <ClCompile Include="Autotests\TTestBuilding.cpp">
+      <Filter>Source Files\Autotests</Filter>
+    </ClCompile>
+    <ClCompile Include="Autotests\TTestForestChimeras.cpp">
+      <Filter>Source Files\Autotests</Filter>
+    </ClCompile>
+    <ClCompile Include="Autotests\TTestMap.cpp">
+      <Filter>Source Files\Autotests</Filter>
+    </ClCompile>
+    <ClCompile Include="Autotests\TTestOwner.cpp">
+      <Filter>Source Files\Autotests</Filter>
+    </ClCompile>
+    <ClCompile Include="Prototypes\TBuffPrototype.cpp">
+      <Filter>Source Files\Prototypes</Filter>
+    </ClCompile>
+    <ClCompile Include="Prototypes\TPlayerPrototype.cpp">
+      <Filter>Source Files\Prototypes</Filter>
+    </ClCompile>
+    <ClCompile Include="Prototypes\TMapPrototype.cpp">
+      <Filter>Source Files\Prototypes</Filter>
+    </ClCompile>
+    <ClCompile Include="Prototypes\TWorldPrototype.cpp">
+      <Filter>Source Files\Prototypes</Filter>
+    </ClCompile>
+    <ClCompile Include="Autotests\TTestMovement.cpp">
+      <Filter>Source Files\Autotests</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldComponents\TBuff.cpp">
+      <Filter>Source Files\WorldComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldComponents\TObject.cpp">
+      <Filter>Source Files\WorldComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldComponents\TPlayer.cpp">
+      <Filter>Source Files\WorldComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldComponents\TStartEntityCreator.cpp">
+      <Filter>Source Files\WorldComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldComponents\TWorld.cpp">
+      <Filter>Source Files\WorldComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithm\TAlgorithms.cpp">
+      <Filter>Source Files\Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithm\TLightStaticRandom.cpp">
+      <Filter>Source Files\Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithm\TPathFinder.cpp">
+      <Filter>Source Files\Algorithm</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
