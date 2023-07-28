@@ -1,6 +1,7 @@
 #ifndef TOBJECT_H
 #define TOBJECT_H
 
+#include <memory>
 #include <CRX/Reflection/TReflectionObject.h>
 
 class TObject : public crx::TReflectionObject {

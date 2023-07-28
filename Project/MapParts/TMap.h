@@ -20,8 +20,7 @@ class TMap : public TObject {
 	void CreateMap(int width = s_iWidth, int lenght = s_iLenght, int height = s_iHeight, int layer = s_iLayer);  //Creating 100x100x10 defMap
 	void SpawnAllEntity();
 	std::shared_ptr<SMapElement> FindLocationOnMap(SMapPoint loc);
-	void SetUpGird();
-	void RefreshGridFor(NOwner owner);
+	void RefreshGridForOwner(NOwner owner);
 
 	//Need to be tested |--->
 	public:
@@ -30,14 +29,14 @@ class TMap : public TObject {
 
 	public:
 	void Attack(std::shared_ptr<TUnit> attacker, std::shared_ptr<IEntity> target);
-	void MoveTo(std::shared_ptr<TUnit> unit, std::shared_ptr<SMapElement> aimedLocation); 
+	void MoveTo(std::shared_ptr<TUnit> unit, std::shared_ptr<SMapElement> aimedLocation);
 	//<---|
 	public:
-	void Summon(std::shared_ptr<IEntity>, SMapPoint point ={-1, -1, -1, -1}, int rotation = -1);
+	void Summon(std::shared_ptr<IEntity>, SMapPoint point = TAlgorithms::SGridUtility::InvalidPoint, int rotation = -1);
 	void Remove(std::shared_ptr<IEntity>);
+	void SpawnEntity(std::shared_ptr<IEntity> entity);
 
 	protected:
-	void SpawnEntity(std::shared_ptr<IEntity> entity);
 	int DistanceBetweenPoints(SMapPoint, SMapPoint);
 
 	public:
@@ -51,12 +50,12 @@ class TMap : public TObject {
 	std::shared_ptr<TMapPrototype> m_xPrototype;
 
 	protected:
-	int m_iWidth =  s_iWidth ;
+	int m_iWidth =  s_iWidth;
 	int m_iLenght = s_iLenght;
 	int m_iHeight = s_iHeight;
 	int m_iLayer = s_iLayer;
 
-	protected: 
+	protected:
 	SMapPoint m_xMaxCoordinate;
 };
 

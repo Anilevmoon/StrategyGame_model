@@ -8,6 +8,11 @@ SMapPoint operator-(const SMapPoint& a, const SMapPoint& b) { return SMapPoint(a
 
 bool operator<(const SMapPoint& a, const SMapPoint& b) { return (a.w<b.w||a.x<b.x||a.y<b.y||a.z<b.z); }
 
+
+//SMapPoint operator+(const SMapPoint& a, const SMapPoint& b) { return SMapPoint(a.x+b.x, a.y+b.y, a.z+b.z, a.w+b.w); }
+
+SMapPoint::SMapPoint(int xCoord, int yCoord, int zCoord, int wCoord) : x{xCoord}, y{yCoord}, z{zCoord}, w{wCoord} {}
+
 void SMapPoint::operator=(const SMapPoint& a) {
 	x = a.x;
 	y = a.y;

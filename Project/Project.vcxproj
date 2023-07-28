@@ -214,6 +214,7 @@
     <ClInclude Include="EntityPart\TModel.h" />
     <ClInclude Include="EntityPart\TNeitral.h" />
     <ClInclude Include="EntityPart\TUnit.h" />
+    <ClInclude Include="Enums\NBuildingState.h" />
     <ClInclude Include="Enums\NEntityType.h" />
     <ClInclude Include="Enums\NMagicType.h" />
     <ClInclude Include="Enums\NOwner.h" />
@@ -222,6 +223,7 @@
     <ClInclude Include="MapParts\TMap.h" />
     <ClInclude Include="Prototypes\TBuffPrototype.h" />
     <ClInclude Include="Prototypes\TBuildingsPrototype.h" />
+    <ClInclude Include="Prototypes\TBuildUnitCreatorPrototype.h" />
     <ClInclude Include="Prototypes\TMapPrototype.h" />
     <ClInclude Include="Prototypes\TPlayerPrototype.h" />
     <ClInclude Include="Prototypes\TUnitPrototype.h" />
@@ -275,12 +277,15 @@
     <ClCompile Include="Algorithm\TAlgorithms.cpp" />
     <ClCompile Include="Algorithm\TLightStaticRandom.cpp" />
     <ClCompile Include="Algorithm\TPathFinder.cpp" />
+    <ClCompile Include="Autotests\TTestAttack.cpp" />
     <ClCompile Include="Autotests\TTestBuff.cpp" />
     <ClCompile Include="Autotests\TTestBuilding.cpp" />
+    <ClCompile Include="Autotests\TTestCreateUnitFromBuilding.cpp" />
     <ClCompile Include="Autotests\TTestForestChimeras.cpp" />
     <ClCompile Include="Autotests\TTestMap.cpp" />
     <ClCompile Include="Autotests\TTestMovement.cpp" />
     <ClCompile Include="Autotests\TTestOwner.cpp" />
+    <ClCompile Include="Autotests\TTestSpawnBuilding.cpp" />
     <ClCompile Include="EntityPart\IEntity.cpp" />
     <ClCompile Include="EntityPart\TBuildings.cpp" />
     <ClCompile Include="EntityPart\TForestChimeras.cpp" />
@@ -294,6 +299,7 @@
     <ClCompile Include="MapParts\TMap.cpp" />
     <ClCompile Include="Prototypes\TBuffPrototype.cpp" />
     <ClCompile Include="Prototypes\TBuildingsPrototype.cpp" />
+    <ClCompile Include="Prototypes\TBuildUnitCreatorPrototype.cpp" />
     <ClCompile Include="Prototypes\TMapPrototype.cpp" />
     <ClCompile Include="Prototypes\TPlayerPrototype.cpp" />
     <ClCompile Include="Prototypes\TUnitPrototype.cpp" />

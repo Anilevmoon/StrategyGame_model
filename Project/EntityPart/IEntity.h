@@ -25,6 +25,7 @@ class IEntity :public TObject {
 
 	public:
 	SMapPoint m_xLocation;
+	NEntityType m_xMemberType;
 	static int s_iID;
 
 	protected:

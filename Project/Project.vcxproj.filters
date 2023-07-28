@@ -324,6 +324,12 @@
     <ClInclude Include="Algorithm\SBox2D.h">
       <Filter>Source Files\Algorithm</Filter>
     </ClInclude>
+    <ClInclude Include="Prototypes\TBuildUnitCreatorPrototype.h">
+      <Filter>Source Files\Prototypes</Filter>
+    </ClInclude>
+    <ClInclude Include="Enums\NBuildingState.h">
+      <Filter>Source Files\Enums</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\CRX\Reflection\IReflectionSerializable.cpp">
@@ -535,6 +541,18 @@
     </ClCompile>
     <ClCompile Include="Algorithm\TPathFinder.cpp">
       <Filter>Source Files\Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="Autotests\TTestCreateUnitFromBuilding.cpp">
+      <Filter>Source Files\Autotests</Filter>
+    </ClCompile>
+    <ClCompile Include="Autotests\TTestSpawnBuilding.cpp">
+      <Filter>Source Files\Autotests</Filter>
+    </ClCompile>
+    <ClCompile Include="Prototypes\TBuildUnitCreatorPrototype.cpp">
+      <Filter>Source Files\Prototypes</Filter>
+    </ClCompile>
+    <ClCompile Include="Autotests\TTestAttack.cpp">
+      <Filter>Source Files\Autotests</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

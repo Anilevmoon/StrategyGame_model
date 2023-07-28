@@ -2,7 +2,6 @@
 #include <CRX/Base/TXTest.h>
 
 #include <WorldComponents/TWorld.h>
-#include <EntityPart/TMilitary.h>
 #include <EntityPart/TForestChimeras.h>
 
 struct TTestForestChimeras : crx::TDebug::TXTest {

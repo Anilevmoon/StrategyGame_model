@@ -22,7 +22,7 @@ class TWorld : public TObject {
 	std::shared_ptr<TWorldPrototype> m_xPrototype;
 
 	public:
-	std::shared_ptr<TMap> m_pActiveMap = nullptr;		//SharedPointer					//створити шаблони карт
+	std::shared_ptr<TMap> m_pActiveMap = nullptr;			//створити шаблони карт
 	std::vector<std::shared_ptr<TMap>> m_vMaps;				//Чому массив і як тоді контролювати і де створювати юнітів якщо вони лежать у мапі?
 
 };

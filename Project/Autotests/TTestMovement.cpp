@@ -46,7 +46,7 @@ struct TTestMovement : crx::TDebug::TXTest {
 		for(auto& unit:world.m_pActiveMap->m_vUnits) {
 			if(world.m_pActiveMap->IsCanMoveTo(unit, aimedElement)) {
 				world.m_pActiveMap->MoveTo(unit, aimedElement);
-			}
+			} 
 		}
 		return (int)aimedElement->m_vObjects.size();
 		//world.m_pActiveMap->FindLocationOnMap(DefaultUnitLocation)->m_vObjects.size();	//Default point where entities were before moving

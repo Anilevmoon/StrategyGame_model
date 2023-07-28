@@ -7,34 +7,29 @@ void TMap::CreateMap(int width, int lenght, int height, int layer) {
 	m_iLayer = layer;
 
 	m_xMaxCoordinate = SMapPoint(m_iWidth, m_iLenght, m_iHeight, m_iLayer);
-	for(auto i = 0; i<lenght; ++i) {
-		for(int it = 0; it<width; it++) {
-			for(int itr = 0; itr<height; itr++) {
+	for(auto i = 0; i<m_iWidth; ++i) {
+		for(int it = 0; it<m_iLenght; it++) {
+			for(int itr = 0; itr<m_iHeight; itr++) {
 				auto element = std::make_shared<SMapElement>();
 				element->SetLocation(it, i, itr);
 				m_vMapElements.push_back(element);
 			}
 		}
 	}
-	SetUpGird();
+	m_vvGrid = TAlgorithms::SGridUtility::CreateGrid(m_iWidth, m_iLenght, 1);
 }
 
-void TMap::SpawnAllEntity() { for(auto& currentUnit:m_vUnits) Summon(currentUnit); }
+void TMap::SpawnAllEntity() {
+	for(auto& currentUnit:m_vUnits) SpawnEntity(currentUnit);
+	for(auto CurrentBuild:m_vBuildings) SpawnEntity(CurrentBuild);
+}
 
 std::shared_ptr<SMapElement> TMap::FindLocationOnMap(SMapPoint loc) {
 	for(auto& element:m_vMapElements) { if(element->Location()==loc) return element; }
 	return nullptr;
 }
 
-void TMap::SetUpGird() {
-	for(auto i = 0; i<m_iLenght; ++i) {
-		std::vector<int> v2;
-		for(int it = 0; it<m_iWidth; ++it) { v2.push_back(1); }
-		m_vvGrid.push_back(v2);
-	}
-}
-
-void TMap::RefreshGridFor(NOwner owner) {
+void TMap::RefreshGridForOwner(NOwner owner) {
 	for(auto& build:m_vBuildings) {
 		if(owner!=build->Owner()) {
 			m_vvGrid[build->m_xLocation.x][build->m_xLocation.x] = 0;
@@ -58,12 +53,19 @@ void TMap::Attack(std::shared_ptr<TUnit> attacker, std::shared_ptr<IEntity> targ
 }
 
 void TMap::MoveTo(std::shared_ptr<TUnit> unit, std::shared_ptr<SMapElement> aimedLocation) {
-	RefreshGridFor(unit->Owner());
+	Remove(unit);
+	unit->SetCoordinates(aimedLocation->Location());
+	SpawnEntity(unit);
+
+	//This function changes grip according to owner BUT we need it here for tests and one-PC-game
+	//If there is a multiplayer it would be called with Player.m_xType;
+	RefreshGridForOwner(unit->Owner());
+
 	auto unitPath = m_oPathFinder->FindPathTo(m_vvGrid, unit->m_xLocation, aimedLocation->Location());
 	for(auto& step:unitPath) {
 		Remove(unit);
 		unit->SetCoordinates(step);
-			//Here some function with animation etc...
+		//Here some function with animation etc...
 		SpawnEntity(unit);
 	}
 }

@@ -3,19 +3,18 @@
 void TUnitPrototype::SetPrototype(NEntityType type) {
 	m_xType = type;
 
-	switch(m_xType)
-	{
+	switch(m_xType) {
 		case NEntityType::VillageWarior:
 		m_fHealth = 100.f;
 		m_fAttack = 20.f;
 		m_iSpeed = 3;
 		m_fArmor = 0.80f;
-		m_iAttackRange = 1;
+		m_iAttackRange = 2;
 		break;
 
 		case NEntityType::Kozak:
 		m_fHealth = 100.f;
-		m_fAttack = 20.f;
+		m_fAttack = 30.f;
 		m_iSpeed = 6;
 		m_fArmor = 0.80f;
 		m_iAttackRange = 1;
@@ -42,7 +41,7 @@ void TUnitPrototype::SetPrototype(NEntityType type) {
 		m_fAttack = 20.f;
 		m_iSpeed = 3;
 		m_fArmor = 0.80f;
-		m_iAttackRange = 1;
+		m_iAttackRange = 6;
 		break;
 
 		case NEntityType::SichShoters:

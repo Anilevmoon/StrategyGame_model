@@ -9,6 +9,7 @@ void TUnit::DestroyEntity() {
 }
 
 void TUnit::SetEntityPrototype(NEntityType type) {
+	m_xMemberType = type;
 	m_pPrototype->SetPrototype(type);
 	m_fDynamicHealth = m_pPrototype->m_fHealth;
 }
@@ -20,7 +21,7 @@ float TUnit::Armor() { return m_fDynamicArmor; }
 float TUnit::GetAttack() { return m_xDynamicAttack; }
 void TUnit::ChangeOwner(NOwner own) { m_xOwner = own; }
 
-void TUnit::ApplyDamage(float damage) { m_fDynamicHealth+=damage; }
+void TUnit::ApplyDamage(float damage) { m_fDynamicHealth-=damage; }
 
 void TUnit::SetCoordinates(SMapPoint coordinates) {	m_xLocation = coordinates; }
 

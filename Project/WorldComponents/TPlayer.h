@@ -1,23 +1,30 @@
 #ifndef TPLAYER_H
 #define TPLAYER_H
 
-
-#include  <EntityPart/IEntity.h>
-
+#include <EntityPart/TBuildings.h>
+#include <EntityPart/TUnit.h>
 
 
 class TPlayer : public TObject {
 	public:
-	TPlayer(NOwner type) : m_xPlayerType(type){}
+	TPlayer(NOwner type) : m_xPlayerType(type) {}
 	virtual ~TPlayer()=default;
 
 	public:
+	void SeparateUnitsAndBuildings();
+
+	public:
 	std::vector<std::weak_ptr<IEntity>>& Entities();
-	const NOwner &Type();
+	std::vector<std::weak_ptr<TUnit>>& Units();
+	std::vector<std::weak_ptr<TBuildings>>& Buildings();
+
+	const NOwner& Type();
 
 	protected:
 	NOwner m_xPlayerType;
-	std::vector<std::weak_ptr<IEntity>> m_vPlayerObjects;
+	std::vector<std::weak_ptr<IEntity>> m_vPlayerObjects ={};
+	std::vector<std::weak_ptr<TUnit>> m_vPlayerUnits ={};
+	std::vector<std::weak_ptr<TBuildings>>m_vPlayerBuildings ={};
 
 	//Have vector with weak_pointers on its units, wich are stored in TMap and created by TEnitityCreator
 	//TEnitityCreator should give TPlayer pointers on its objects

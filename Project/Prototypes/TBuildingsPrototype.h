@@ -1,22 +1,18 @@
 #ifndef TBUILDINGS_PROTOTYPE_H
 #define TBUILDINGS_PROTOTYPE_H
 
-#include <WorldComponents/TObject.h>
-#include <MapParts/TMap.h>
 #include <Prototypes/TBuffPrototype.h>
-
+#include <Enums/NEntityType.h>
 class TBuildingsPrototype :public TObject {
 	public:
 	TBuildingsPrototype()=default;
-
 	void SetBuildingsPrototype(NEntityType type);
-
+	
 	public:
 	float m_fHealth = 0.f;
-	std::vector<std::shared_ptr<SMapPoint>> m_vBuildPoints;
-	void SetCoordinates(std::vector<SMapPoint> cache);
 
 	public:
+	NEntityType m_xType;
 	std::vector<std::shared_ptr<TBuffPrototype>> m_vBuffPrototypesContainer;
 };
 

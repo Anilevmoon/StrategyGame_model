@@ -1,8 +1,7 @@
 #include "TBuffPrototype.h"
 
 TBuffPrototype::TBuffPrototype(NBuffType type) : m_xType(type){
-	switch(m_xType)
-	{
+	switch(m_xType)	{
 		case NNBuffType::Hill:
 		m_fHealthBuff = 0.3f;
 		m_iMoveNumbers = 0;

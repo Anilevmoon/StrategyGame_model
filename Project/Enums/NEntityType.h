@@ -3,6 +3,7 @@
 
 namespace NNEntityType {
 	enum NEntityType {
+
 		VillageWarior,
 		Kozak,
 		PigRider,
@@ -12,6 +13,7 @@ namespace NNEntityType {
 		Catapulta,
 		ForestMavka,
 		Chugaister,
+
 		CossacksHouse,
 		Coliba,
 		Mazanka
