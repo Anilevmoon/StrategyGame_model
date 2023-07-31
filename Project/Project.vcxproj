@@ -229,6 +229,7 @@
     <ClInclude Include="Prototypes\TUnitPrototype.h" />
     <ClInclude Include="Prototypes\TWorldPrototype.h" />
     <ClInclude Include="WorldComponents\TBuff.h" />
+    <ClInclude Include="WorldComponents\THandbook.h" />
     <ClInclude Include="WorldComponents\TObject.h" />
     <ClInclude Include="WorldComponents\TPlayer.h" />
     <ClInclude Include="WorldComponents\TStartEntityCreator.h" />
@@ -304,7 +305,9 @@
     <ClCompile Include="Prototypes\TPlayerPrototype.cpp" />
     <ClCompile Include="Prototypes\TUnitPrototype.cpp" />
     <ClCompile Include="Prototypes\TWorldPrototype.cpp" />
+    <ClCompile Include="TTestHandbook.cpp" />
     <ClCompile Include="WorldComponents\TBuff.cpp" />
+    <ClCompile Include="WorldComponents\THandbook.cpp" />
     <ClCompile Include="WorldComponents\TObject.cpp" />
     <ClCompile Include="WorldComponents\TPlayer.cpp" />
     <ClCompile Include="WorldComponents\TStartEntityCreator.cpp" />

@@ -330,6 +330,9 @@
     <ClInclude Include="Enums\NBuildingState.h">
       <Filter>Source Files\Enums</Filter>
     </ClInclude>
+    <ClInclude Include="WorldComponents\THandbook.h">
+      <Filter>Source Files\WorldComponents</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\CRX\Reflection\IReflectionSerializable.cpp">
@@ -552,6 +555,12 @@
       <Filter>Source Files\Prototypes</Filter>
     </ClCompile>
     <ClCompile Include="Autotests\TTestAttack.cpp">
+      <Filter>Source Files\Autotests</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldComponents\THandbook.cpp">
+      <Filter>Source Files\WorldComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="TTestHandbook.cpp">
       <Filter>Source Files\Autotests</Filter>
     </ClCompile>
   </ItemGroup>

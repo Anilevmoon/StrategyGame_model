@@ -67,7 +67,9 @@ C:\Home\Project\Project\Prototypes\TMapPrototype.cpp;C:\Home\Project\Project\Bui
 C:\Home\Project\Project\Prototypes\TPlayerPrototype.cpp;C:\Home\Project\Project\Build_x64\Debug\TPlayerPrototype.obj
 C:\Home\Project\Project\Prototypes\TUnitPrototype.cpp;C:\Home\Project\Project\Build_x64\Debug\TUnitPrototype.obj
 C:\Home\Project\Project\Prototypes\TWorldPrototype.cpp;C:\Home\Project\Project\Build_x64\Debug\TWorldPrototype.obj
+C:\Home\Project\Project\TTestHandbook.cpp;C:\Home\Project\Project\Build_x64\Debug\TTestHandbook.obj
 C:\Home\Project\Project\WorldComponents\TBuff.cpp;C:\Home\Project\Project\Build_x64\Debug\TBuff.obj
+C:\Home\Project\Project\WorldComponents\THandbook.cpp;C:\Home\Project\Project\Build_x64\Debug\THandbook.obj
 C:\Home\Project\Project\WorldComponents\TObject.cpp;C:\Home\Project\Project\Build_x64\Debug\TObject.obj
 C:\Home\Project\Project\WorldComponents\TPlayer.cpp;C:\Home\Project\Project\Build_x64\Debug\TPlayer.obj
 C:\Home\Project\Project\WorldComponents\TStartEntityCreator.cpp;C:\Home\Project\Project\Build_x64\Debug\TStartEntityCreator.obj

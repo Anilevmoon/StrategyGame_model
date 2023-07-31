@@ -9,6 +9,7 @@ class TUnitPrototype :public TObject {
 	public:
 	TUnitPrototype()=default;
 	virtual ~TUnitPrototype() = default;
+	DECL_REFLECTION_TABLE();
 
 	public:
 	void SetPrototype(NEntityType type);

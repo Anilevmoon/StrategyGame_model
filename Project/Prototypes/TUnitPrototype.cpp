@@ -1,4 +1,15 @@
+#include <CRX/Reflection/TReflectionImplDefs.h>
 #include "TUnitPrototype.h"
+
+BEGIN_REFLECTION_TABLE(TUnitPrototype, TObject)
+ADD_PROPERTY(Health, m_fHealth);
+ADD_PROPERTY(Attack, m_fAttack);
+ADD_PROPERTY(Speed, m_iSpeed);
+ADD_PROPERTY(Armor, m_fArmor);
+ADD_PROPERTY(AttackRange, m_iAttackRange);
+ADD_PROPERTY(Type, m_xType);
+
+END_REFLECTION_TABLE();
 
 void TUnitPrototype::SetPrototype(NEntityType type) {
 	m_xType = type;

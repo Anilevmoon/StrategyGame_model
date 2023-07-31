@@ -75,5 +75,4 @@ struct TTestAttack : crx::TDebug::TXTest {
 			Assert(TestAttack(world.m_pPlayer2->Units()[1].lock(), world)==60, "target{1, 3}, 2 attack");
 		}
 	}
-
 };
