@@ -8,11 +8,17 @@
 
 class TPlayer : public TObject {
 	public:
-	TPlayer(NOwner type) : m_xPlayerPrototype(TPlayerPrototype(type)) {}
+	TPlayer(NOwner type = NOwner::PC) : m_xPlayerPrototype(TPlayerPrototype(type)) {}
 	virtual ~TPlayer()=default;
 
 	public:
 	void SeparateUnitsAndBuildings();
+
+	public:
+	void RefreshStats();
+	void CalculateBuildingGold();
+	int Gold();
+
 
 	public:
 	std::vector<std::weak_ptr<IEntity>>& Entities();
@@ -25,6 +31,7 @@ class TPlayer : public TObject {
 
 	protected:
 //	NOwner m_xPlayerType;
+	int i_Gold = 0;
 	std::vector<std::weak_ptr<IEntity>> m_vPlayerObjects ={};
 	std::vector<std::weak_ptr<TUnit>> m_vPlayerUnits ={};
 	std::vector<std::weak_ptr<TBuildings>>m_vPlayerBuildings ={};

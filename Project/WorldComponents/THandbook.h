@@ -23,6 +23,8 @@ class THandbook : virtual public TObject {
     void Save();
 
     std::shared_ptr<TUnitPrototype> GetUnitPrototypeByName(const std::string& name);
+    std::shared_ptr<TMapPrototype> GetMapPrototypeByName(const std::string& name);
+
 
     public:
     std::map<std::string, std::shared_ptr<TWorldPrototype>> WorldPrototypes;

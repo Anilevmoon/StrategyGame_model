@@ -45,3 +45,10 @@ std::shared_ptr<TUnitPrototype> THandbook::GetUnitPrototypeByName(const std::str
 	// return default
 	return std::make_shared<TUnitPrototype>();
 }
+
+std::shared_ptr<TMapPrototype> THandbook::GetMapPrototypeByName(const std::string& name) {
+	auto it = MapPrototypes.find(name);
+	if(it!=MapPrototypes.end()) { return it->second; }
+	// return default
+	return std::shared_ptr<TMapPrototype>();
+}

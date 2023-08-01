@@ -46,6 +46,9 @@
     <Filter Include="Source Files\Algorithm">
       <UniqueIdentifier>{5761e0a4-7abd-4b15-a43b-a460c68f18c7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\GameLogic">
+      <UniqueIdentifier>{c985f699-d9be-4ca1-9d04-8af6d48fa1d2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\CRX\Reflection\IReflectionFunctionCallOperator.h">
@@ -336,6 +339,24 @@
     <ClInclude Include="Enums\NMapType.h">
       <Filter>Source Files\Enums</Filter>
     </ClInclude>
+    <ClInclude Include="Algorithm\TSmartFunction.h">
+      <Filter>Source Files\Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLogic\TSaveInfo.h">
+      <Filter>Source Files\GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLogic\TSaveManager.h">
+      <Filter>Source Files\GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLogic\TGameEngine.h">
+      <Filter>Source Files\GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLogic\TGameSession.h">
+      <Filter>Source Files\GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLogic\TGameTimeManager.h">
+      <Filter>Source Files\GameLogic</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\CRX\Reflection\IReflectionSerializable.cpp">
@@ -564,6 +585,30 @@
       <Filter>Source Files\WorldComponents</Filter>
     </ClCompile>
     <ClCompile Include="Autotests\TTestHandbook.cpp">
+      <Filter>Source Files\Autotests</Filter>
+    </ClCompile>
+    <ClCompile Include="Autotests\TTestGameManager.cpp">
+      <Filter>Source Files\Autotests</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithm\TSmartFunction.cpp">
+      <Filter>Source Files\Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLogic\TSaveInfo.cpp">
+      <Filter>Source Files\GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLogic\TSaveManager.cpp">
+      <Filter>Source Files\GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLogic\TGameEngine.cpp">
+      <Filter>Source Files\GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLogic\TGameSession.cpp">
+      <Filter>Source Files\GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLogic\TGameTimeManager.cpp">
+      <Filter>Source Files\GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="Autotests\TTestGameEngine.cpp">
       <Filter>Source Files\Autotests</Filter>
     </ClCompile>
   </ItemGroup>

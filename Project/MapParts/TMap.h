@@ -33,6 +33,9 @@ class TMap : public TObject {
 	void Remove(std::shared_ptr<IEntity>);
 	void SpawnEntity(std::shared_ptr<IEntity> entity);
 
+	public: 
+	void SetPrototype(std::shared_ptr<TMapPrototype> prot);
+
 	protected:
 	int DistanceBetweenPoints(SMapPoint, SMapPoint);
 

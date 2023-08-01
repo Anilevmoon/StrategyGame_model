@@ -40,11 +40,14 @@ C:\Home\Project\CRX\XParse\TXMNode.cpp;C:\Home\Project\Project\Build_x64\Debug\T
 C:\Home\Project\Project\Algorithm\TAlgorithms.cpp;C:\Home\Project\Project\Build_x64\Debug\TAlgorithms.obj
 C:\Home\Project\Project\Algorithm\TLightStaticRandom.cpp;C:\Home\Project\Project\Build_x64\Debug\TLightStaticRandom.obj
 C:\Home\Project\Project\Algorithm\TPathFinder.cpp;C:\Home\Project\Project\Build_x64\Debug\TPathFinder.obj
+C:\Home\Project\Project\Algorithm\TSmartFunction.cpp;C:\Home\Project\Project\Build_x64\Debug\TSmartFunction.obj
 C:\Home\Project\Project\Autotests\TTestAttack.cpp;C:\Home\Project\Project\Build_x64\Debug\TTestAttack.obj
 C:\Home\Project\Project\Autotests\TTestBuff.cpp;C:\Home\Project\Project\Build_x64\Debug\TTestBuff.obj
 C:\Home\Project\Project\Autotests\TTestBuilding.cpp;C:\Home\Project\Project\Build_x64\Debug\TTestBuilding.obj
 C:\Home\Project\Project\Autotests\TTestCreateUnitFromBuilding.cpp;C:\Home\Project\Project\Build_x64\Debug\TTestCreateUnitFromBuilding.obj
 C:\Home\Project\Project\Autotests\TTestForestChimeras.cpp;C:\Home\Project\Project\Build_x64\Debug\TTestForestChimeras.obj
+C:\Home\Project\Project\Autotests\TTestGameEngine.cpp;C:\Home\Project\Project\Build_x64\Debug\TTestGameEngine.obj
+C:\Home\Project\Project\Autotests\TTestGameManager.cpp;C:\Home\Project\Project\Build_x64\Debug\TTestGameManager.obj
 C:\Home\Project\Project\Autotests\TTestHandbook.cpp;C:\Home\Project\Project\Build_x64\Debug\TTestHandbook.obj
 C:\Home\Project\Project\Autotests\TTestMap.cpp;C:\Home\Project\Project\Build_x64\Debug\TTestMap.obj
 C:\Home\Project\Project\Autotests\TTestMovement.cpp;C:\Home\Project\Project\Build_x64\Debug\TTestMovement.obj
@@ -57,6 +60,11 @@ C:\Home\Project\Project\EntityPart\TMilitary.cpp;C:\Home\Project\Project\Build_x
 C:\Home\Project\Project\EntityPart\TModel.cpp;C:\Home\Project\Project\Build_x64\Debug\TModel.obj
 C:\Home\Project\Project\EntityPart\TNeitral.cpp;C:\Home\Project\Project\Build_x64\Debug\TNeitral.obj
 C:\Home\Project\Project\EntityPart\TUnit.cpp;C:\Home\Project\Project\Build_x64\Debug\TUnit.obj
+C:\Home\Project\Project\GameLogic\TGameEngine.cpp;C:\Home\Project\Project\Build_x64\Debug\TGameEngine.obj
+C:\Home\Project\Project\GameLogic\TGameSession.cpp;C:\Home\Project\Project\Build_x64\Debug\TGameSession.obj
+C:\Home\Project\Project\GameLogic\TGameTimeManager.cpp;C:\Home\Project\Project\Build_x64\Debug\TGameTimeManager.obj
+C:\Home\Project\Project\GameLogic\TSaveInfo.cpp;C:\Home\Project\Project\Build_x64\Debug\TSaveInfo.obj
+C:\Home\Project\Project\GameLogic\TSaveManager.cpp;C:\Home\Project\Project\Build_x64\Debug\TSaveManager.obj
 C:\Home\Project\Project\main.cpp;C:\Home\Project\Project\Build_x64\Debug\main.obj
 C:\Home\Project\Project\MapParts\SMapElement.cpp;C:\Home\Project\Project\Build_x64\Debug\SMapElement.obj
 C:\Home\Project\Project\MapParts\SMapPoint.cpp;C:\Home\Project\Project\Build_x64\Debug\SMapPoint.obj

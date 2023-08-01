@@ -20,6 +20,14 @@ struct TTestHandbook : crx::TDebug::TXTest {
 			unit->SetEntityPrototype(handbook->GetUnitPrototypeByName("ForestMavka"));
 			Assert(unit->m_pPrototype->m_xType==NEntityType::ForestMavka, " Created from Handbook ForestMavka");
 		}
+
+		std::shared_ptr<TMap> map = std::make_shared<TMap>();
+		
+		{
+			map->SetPrototype(handbook->GetMapPrototypeByName("Flat"));
+			Assert(map->m_xPrototype->m_xMapType==NMapType::Flat, " Created from Handbook map FLAT");
+		}
+		//LOading all members to handBook!--->
 		
 	//	for(int i = 0; i<=NEntityType::Mazanka; i++) {
 	//		auto type = (NEntityType)i;

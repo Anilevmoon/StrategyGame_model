@@ -3,6 +3,7 @@
 
 #include <EntityPart/TBuildings.h>
 #include <WorldComponents/TWorld.h>
+#include <Enums/NEntityType.h>
 
 static bool IsEqual(SMapPoint cache, SMapPoint cache2) {
 	if(cache == cache2) return true;
@@ -21,7 +22,7 @@ struct TTestCreateUnitFromBuilding :crx::TDebug::TXTest {
 			 
 		build->SetMap(world1.m_pActiveMap);
 
-		build->SetCoordinates({1,0,1,0});
+		build->SetCoordinates({1, 0, 1, 0});
 		//world1.m_pActiveMap->SpawnEntity(build);
 		build->AcquireUnit(NEntityType::Kozak);
 		

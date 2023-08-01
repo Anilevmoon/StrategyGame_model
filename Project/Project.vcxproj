@@ -207,6 +207,7 @@
     <ClInclude Include="Algorithm\TAlgorithms.h" />
     <ClInclude Include="Algorithm\TLightStaticRandom.h" />
     <ClInclude Include="Algorithm\TPathFinder.h" />
+    <ClInclude Include="Algorithm\TSmartFunction.h" />
     <ClInclude Include="EntityPart\IEntity.h" />
     <ClInclude Include="EntityPart\TBuildings.h" />
     <ClInclude Include="EntityPart\TForestChimeras.h" />
@@ -219,6 +220,11 @@
     <ClInclude Include="Enums\NMagicType.h" />
     <ClInclude Include="Enums\NMapType.h" />
     <ClInclude Include="Enums\NOwner.h" />
+    <ClInclude Include="GameLogic\TGameEngine.h" />
+    <ClInclude Include="GameLogic\TGameSession.h" />
+    <ClInclude Include="GameLogic\TGameTimeManager.h" />
+    <ClInclude Include="GameLogic\TSaveInfo.h" />
+    <ClInclude Include="GameLogic\TSaveManager.h" />
     <ClInclude Include="MapParts\SMapElement.h" />
     <ClInclude Include="MapParts\SMapPoint.h" />
     <ClInclude Include="MapParts\TMap.h" />
@@ -279,11 +285,14 @@
     <ClCompile Include="Algorithm\TAlgorithms.cpp" />
     <ClCompile Include="Algorithm\TLightStaticRandom.cpp" />
     <ClCompile Include="Algorithm\TPathFinder.cpp" />
+    <ClCompile Include="Algorithm\TSmartFunction.cpp" />
     <ClCompile Include="Autotests\TTestAttack.cpp" />
     <ClCompile Include="Autotests\TTestBuff.cpp" />
     <ClCompile Include="Autotests\TTestBuilding.cpp" />
     <ClCompile Include="Autotests\TTestCreateUnitFromBuilding.cpp" />
     <ClCompile Include="Autotests\TTestForestChimeras.cpp" />
+    <ClCompile Include="Autotests\TTestGameEngine.cpp" />
+    <ClCompile Include="Autotests\TTestGameManager.cpp" />
     <ClCompile Include="Autotests\TTestHandbook.cpp" />
     <ClCompile Include="Autotests\TTestMap.cpp" />
     <ClCompile Include="Autotests\TTestMovement.cpp" />
@@ -296,6 +305,11 @@
     <ClCompile Include="EntityPart\TModel.cpp" />
     <ClCompile Include="EntityPart\TNeitral.cpp" />
     <ClCompile Include="EntityPart\TUnit.cpp" />
+    <ClCompile Include="GameLogic\TGameEngine.cpp" />
+    <ClCompile Include="GameLogic\TGameSession.cpp" />
+    <ClCompile Include="GameLogic\TGameTimeManager.cpp" />
+    <ClCompile Include="GameLogic\TSaveInfo.cpp" />
+    <ClCompile Include="GameLogic\TSaveManager.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MapParts\SMapElement.cpp" />
     <ClCompile Include="MapParts\SMapPoint.cpp" />

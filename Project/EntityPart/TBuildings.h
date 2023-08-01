@@ -35,11 +35,15 @@ class TBuildings :public IEntity {
 
 	public:
 	void AcquireUnit(NEntityType prototype);
+	int AddGold();
 	
 	public:
 	std::shared_ptr<TBuildingsPrototype> m_pPrototype = nullptr; 
 	std::shared_ptr<TBuildUnitCreatorPrototype> p_CreatorPrototype = nullptr; 
 	std::weak_ptr<TMap> p_CurrentMap;
+	
+	public:
+	int i_GoldFromBuilding = 0;
 	int ID = 1;
 	
 };
