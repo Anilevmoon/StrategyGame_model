@@ -14,6 +14,12 @@ void TUnit::SetEntityPrototype(NEntityType type) {
 	m_fDynamicHealth = m_pPrototype->m_fHealth;
 }
 
+void TUnit::SetEntityPrototype(std::shared_ptr<TUnitPrototype> prot) {
+	m_xMemberType = prot->m_xType;
+	m_pPrototype = prot;
+	m_fDynamicHealth = m_pPrototype->m_fHealth;
+}
+
 NOwner& TUnit::Owner() { return m_xOwner; }
 float TUnit::Health() { return 	m_fDynamicHealth; }
 int TUnit::Rotation() {	return m_iRotaotion; }

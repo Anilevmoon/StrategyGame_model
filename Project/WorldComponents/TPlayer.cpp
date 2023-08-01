@@ -17,4 +17,4 @@ std::vector<std::weak_ptr<TUnit>>& TPlayer::Units() { return m_vPlayerUnits; }
 
 std::vector<std::weak_ptr<TBuildings>>& TPlayer::Buildings() { return m_vPlayerBuildings; }
 
-const NOwner& TPlayer::Type() {	return m_xPlayerType; }
+const NOwner& TPlayer::Type() {	return m_xPlayerPrototype.m_xPlayerType; }

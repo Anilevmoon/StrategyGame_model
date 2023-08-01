@@ -1,10 +1,14 @@
 #include "TMap.h"
 
-void TMap::CreateMap(int width, int lenght, int height, int layer) {
-	m_iWidth = width;
-	m_iLenght = lenght;
-	m_iHeight = height;
-	m_iLayer = layer;
+void TMap::CreateMap(/*int width = s_iWidth, int lenght = s_iLenght, int height = s_iHeight, int layer = s_iLayer*/NMapType maptype) {
+
+	m_xPrototype = std::make_shared<TMapPrototype>(maptype);
+
+
+	m_iWidth = m_xPrototype->m_iWidth;
+	m_iLenght = m_xPrototype->m_iLenght;
+	m_iHeight = m_xPrototype->m_iHeight;
+	m_iLayer = m_xPrototype->m_iLayer;
 
 	m_xMaxCoordinate = SMapPoint(m_iWidth, m_iLenght, m_iHeight, m_iLayer);
 	for(auto i = 0; i<m_iWidth; ++i) {

@@ -19,6 +19,8 @@ class TUnit : public IEntity {
 
 	public:
 	virtual void SetEntityPrototype(NEntityType type) override;
+	virtual void SetEntityPrototype(std::shared_ptr<TUnitPrototype> prot);
+
 	void ChangeOwner(NOwner own) override;
 	void ApplyDamage(float damage) override;
 	void SetCoordinates(SMapPoint) override;

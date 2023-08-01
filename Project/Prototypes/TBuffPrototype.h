@@ -6,8 +6,9 @@
 
 class TBuffPrototype : public TObject {
 	public:
-	TBuffPrototype(NBuffType type);
+	TBuffPrototype(NBuffType type = (NBuffType)0 );
 	virtual ~TBuffPrototype()=default;
+	DECL_REFLECTION_TABLE();
 
 	public:
 	NBuffType m_xType;

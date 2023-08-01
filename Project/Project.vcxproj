@@ -217,6 +217,7 @@
     <ClInclude Include="Enums\NBuildingState.h" />
     <ClInclude Include="Enums\NEntityType.h" />
     <ClInclude Include="Enums\NMagicType.h" />
+    <ClInclude Include="Enums\NMapType.h" />
     <ClInclude Include="Enums\NOwner.h" />
     <ClInclude Include="MapParts\SMapElement.h" />
     <ClInclude Include="MapParts\SMapPoint.h" />
@@ -283,6 +284,7 @@
     <ClCompile Include="Autotests\TTestBuilding.cpp" />
     <ClCompile Include="Autotests\TTestCreateUnitFromBuilding.cpp" />
     <ClCompile Include="Autotests\TTestForestChimeras.cpp" />
+    <ClCompile Include="Autotests\TTestHandbook.cpp" />
     <ClCompile Include="Autotests\TTestMap.cpp" />
     <ClCompile Include="Autotests\TTestMovement.cpp" />
     <ClCompile Include="Autotests\TTestOwner.cpp" />
@@ -305,7 +307,6 @@
     <ClCompile Include="Prototypes\TPlayerPrototype.cpp" />
     <ClCompile Include="Prototypes\TUnitPrototype.cpp" />
     <ClCompile Include="Prototypes\TWorldPrototype.cpp" />
-    <ClCompile Include="TTestHandbook.cpp" />
     <ClCompile Include="WorldComponents\TBuff.cpp" />
     <ClCompile Include="WorldComponents\THandbook.cpp" />
     <ClCompile Include="WorldComponents\TObject.cpp" />

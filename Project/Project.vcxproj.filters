@@ -261,9 +261,6 @@
     <ClInclude Include="EntityPart\TUnit.h">
       <Filter>Source Files\EntityPart</Filter>
     </ClInclude>
-    <ClInclude Include="Enums\NMagicType.h">
-      <Filter>Source Files\Enums</Filter>
-    </ClInclude>
     <ClInclude Include="Enums\NOwner.h">
       <Filter>Source Files\Enums</Filter>
     </ClInclude>
@@ -332,6 +329,12 @@
     </ClInclude>
     <ClInclude Include="WorldComponents\THandbook.h">
       <Filter>Source Files\WorldComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="Enums\NMagicType.h">
+      <Filter>Source Files\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Enums\NMapType.h">
+      <Filter>Source Files\Enums</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -560,7 +563,7 @@
     <ClCompile Include="WorldComponents\THandbook.cpp">
       <Filter>Source Files\WorldComponents</Filter>
     </ClCompile>
-    <ClCompile Include="TTestHandbook.cpp">
+    <ClCompile Include="Autotests\TTestHandbook.cpp">
       <Filter>Source Files\Autotests</Filter>
     </ClCompile>
   </ItemGroup>

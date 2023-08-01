@@ -7,7 +7,7 @@ class TBuildingsPrototype :public TObject {
 	public:
 	TBuildingsPrototype()=default;
 	void SetBuildingsPrototype(NEntityType type);
-	
+	DECL_REFLECTION_TABLE();
 	public:
 	float m_fHealth = 0.f;
 

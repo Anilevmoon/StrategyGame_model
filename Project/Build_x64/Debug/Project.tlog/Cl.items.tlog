@@ -45,6 +45,7 @@ C:\Home\Project\Project\Autotests\TTestBuff.cpp;C:\Home\Project\Project\Build_x6
 C:\Home\Project\Project\Autotests\TTestBuilding.cpp;C:\Home\Project\Project\Build_x64\Debug\TTestBuilding.obj
 C:\Home\Project\Project\Autotests\TTestCreateUnitFromBuilding.cpp;C:\Home\Project\Project\Build_x64\Debug\TTestCreateUnitFromBuilding.obj
 C:\Home\Project\Project\Autotests\TTestForestChimeras.cpp;C:\Home\Project\Project\Build_x64\Debug\TTestForestChimeras.obj
+C:\Home\Project\Project\Autotests\TTestHandbook.cpp;C:\Home\Project\Project\Build_x64\Debug\TTestHandbook.obj
 C:\Home\Project\Project\Autotests\TTestMap.cpp;C:\Home\Project\Project\Build_x64\Debug\TTestMap.obj
 C:\Home\Project\Project\Autotests\TTestMovement.cpp;C:\Home\Project\Project\Build_x64\Debug\TTestMovement.obj
 C:\Home\Project\Project\Autotests\TTestOwner.cpp;C:\Home\Project\Project\Build_x64\Debug\TTestOwner.obj
@@ -67,7 +68,6 @@ C:\Home\Project\Project\Prototypes\TMapPrototype.cpp;C:\Home\Project\Project\Bui
 C:\Home\Project\Project\Prototypes\TPlayerPrototype.cpp;C:\Home\Project\Project\Build_x64\Debug\TPlayerPrototype.obj
 C:\Home\Project\Project\Prototypes\TUnitPrototype.cpp;C:\Home\Project\Project\Build_x64\Debug\TUnitPrototype.obj
 C:\Home\Project\Project\Prototypes\TWorldPrototype.cpp;C:\Home\Project\Project\Build_x64\Debug\TWorldPrototype.obj
-C:\Home\Project\Project\TTestHandbook.cpp;C:\Home\Project\Project\Build_x64\Debug\TTestHandbook.obj
 C:\Home\Project\Project\WorldComponents\TBuff.cpp;C:\Home\Project\Project\Build_x64\Debug\TBuff.obj
 C:\Home\Project\Project\WorldComponents\THandbook.cpp;C:\Home\Project\Project\Build_x64\Debug\THandbook.obj
 C:\Home\Project\Project\WorldComponents\TObject.cpp;C:\Home\Project\Project\Build_x64\Debug\TObject.obj

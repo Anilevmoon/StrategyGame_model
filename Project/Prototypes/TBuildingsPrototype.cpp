@@ -1,4 +1,12 @@
 #include "TBuildingsPrototype.h"
+#include <CRX/Reflection/TReflectionImplDefs.h>
+
+BEGIN_REFLECTION_TABLE(TBuildingsPrototype, TObject)
+ADD_PROPERTY(Health, m_fHealth);
+ADD_PROPERTY(Type, m_xType);
+END_REFLECTION_TABLE();
+
+
 void TBuildingsPrototype::SetBuildingsPrototype(NEntityType type) {  
 	m_xType = type;
 
