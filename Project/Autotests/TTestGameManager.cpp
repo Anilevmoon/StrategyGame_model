@@ -17,8 +17,10 @@ struct TTestGameManager :crx::TDebug::TXTest {
 		game.FinishTurn.Bind(player1, &game.Turn);
 		Assert(game.TurnNumber() == 0, "Without Turn");
 
-		game.FinishTurn(player2);		
+		auto player = game.FinishTurn(player2);		
 		Assert(game.TurnNumber() == 1, "First Turn");
+
+		Assert(player.Type()==player1.Type(), "Next Player");
 
 		game.FinishTurn(player1);
 		Assert(game.TurnNumber() == 2, "Second Turn");

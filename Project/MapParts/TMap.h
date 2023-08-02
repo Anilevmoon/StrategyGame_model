@@ -6,11 +6,12 @@
 #include <Prototypes/TMapPrototype.h>
 #include <Algorithm/TPathFinder.h>
 #include <Enums/NMapType.h>
-
+#include <Algorithm/TSmartFunction.h>
 
 class TMap : public TObject {
 	public:
-	TMap()=default;
+	TMap() {
+	}
 	virtual ~TMap()=default;
 
 	public:
@@ -33,11 +34,14 @@ class TMap : public TObject {
 	void Remove(std::shared_ptr<IEntity>);
 	void SpawnEntity(std::shared_ptr<IEntity> entity);
 
-	public: 
-	void SetPrototype(std::shared_ptr<TMapPrototype> prot);
+	protected: 
+	void SetPrototypeImplementation(std::shared_ptr<TMapPrototype> prot);
 
 	protected:
 	int DistanceBetweenPoints(SMapPoint, SMapPoint);
+
+	public:
+	TSmartFunction<void(std::shared_ptr<TMapPrototype>)> SetPrototype{this, &TMap::SetPrototypeImplementation};
 
 	public:
 	std::vector<std::shared_ptr<SMapElement>> m_vMapElements;

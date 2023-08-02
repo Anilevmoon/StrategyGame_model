@@ -94,7 +94,7 @@ void TMap::SpawnEntity(std::shared_ptr<IEntity> entity) {
 	m_vMapElements[counter]->m_vObjects.push_back(entity);
 }
 
-void TMap::SetPrototype(std::shared_ptr<TMapPrototype> prot) { m_xPrototype = prot; }
+void TMap::SetPrototypeImplementation(std::shared_ptr<TMapPrototype> prot) { m_xPrototype = prot; }
 
 int TMap::DistanceBetweenPoints(SMapPoint first, SMapPoint second) {
 	auto subtraction = first - second;
